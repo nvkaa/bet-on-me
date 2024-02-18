@@ -12,8 +12,8 @@ body {
 }
 
 @media screen and (max-width: 1368px){
-    #title {
-        border: solid black 1px;
+    #container {
+        /* border: solid black 1px; */
         /* margin-left: 45%; */
         width: max-content;
     }
@@ -33,12 +33,17 @@ body {
     display: none;
 }
 
-#y1, #n1 {
-    display: none;
-}
-
 #vid {
     margin-top: 25px;
+}
+
+#parting {
+    display: none;
+    width: 640px;
+}
+
+button[class="ans hid"] {
+    display: none;
 }
 
 .ans {

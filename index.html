@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="title">
-        <h1>Be my babii (*^▽^*)</h1>
+    <div id="container">
+        <h1 id="proposal">Be my babii (*^▽^*)</h1>
 
         <h4 id="nono">babe if im the one then what are you waiting for :(</h4>    
         
@@ -18,14 +18,27 @@
             <button id="n" class="ans"></button>
             
             <!-- second if no -->
-            <button class="ans" id="y1">okay...</button>
-            <button class="ans" id="n1">still no (Y)</button>
+            <button class="ans hid" id="y1">okay...</button>
+            <button class="ans hid" id="n1">still no (Y)</button>
+
+            <!-- third if no -->
+            <button class="ans hid" id="y2">i do</button>
+            <button class="ans hid" id="n2">yeah i don't have any feelings for you</button>
+
+            <!-- parting -->
+            <div id="parting">
+                <h3>okayy... so i won't bother you anymore. you may quit now, but if you somehow changed your mind, you can always click reload to go through this again.</h3>
+            </div>
+            
+            
         </div>
         <video width="640" controls autoplay loop id="vid" >
             <source src="./landing/bet on meee.mp4" type="video/mp4">
             <!-- <source src="movie.ogg" type="video/ogg"> -->
             Your browser does not support the video tag.
-        </video>
+        </video> <br><br>
+        <button id="rl" class="ans">Reload page</button>
+
     </div>
     
     <script src="app.js"></script>
