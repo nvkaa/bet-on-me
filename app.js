@@ -7,6 +7,7 @@ const nb = document.getElementById("n")
 const nono = document.getElementById("nono")
 const rl = document.getElementById("rl")
 const parting = document.getElementById("parting")
+const yButtons = Array.from(document.getElementsByClassName("y"))
 
 //hidden buttons:
 const y1 = document.getElementById("y1")
@@ -71,6 +72,17 @@ n2.onclick = function() {
 
 //IF YES
 yb.innerText = "yé<33 (recommended)"
+yButtons.forEach( (el, index) => { 
+    el.addEventListener(
+        "click",
+        () => { window.location.href = "agreed.html" }
+    )
+    if(index != 0){
+        el.style.display = 'none'
+    }
+})
+
+//end
 
 vid.volume = 0.3
 vid.onload = (e) => {
@@ -80,7 +92,6 @@ vid.onload = (e) => {
         //insert change background color according to video's background color.
     }
 }
-//end
 
 rl.onclick = () => { window.location.reload()}
 
